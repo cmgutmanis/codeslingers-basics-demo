@@ -67,6 +67,43 @@ namespace BasicConcepts
             integerValue = "Now I'm a string!"; */
 
             #endregion
+
+            #region flow control: conditional logic
+            // We want the user to enter a number and then determine if their number is odd or even. To this, we use if/else logic.
+            Console.Write("Enter a number : ");
+            int num = Convert.ToInt32(Console.ReadLine()); // Type conversion. ReadLine() input is a string type. Here, we do a conversion to integer datatype
+                                                           // intermediate: TryParse and out parameters.
+
+            if (num % 2 == 0)
+            { // check to see if number divisible by 2 has no remainder (even number). % operator does division and determines remainder.
+                // == sign represents "is equal to" != represents "is not equal to". Others: < (less than), <= (less than or equal to), > (greater than), >= (greater than or equal to)
+                Console.WriteLine("Even!");
+            }
+            else // if the evaluated condition is not true
+            {
+                Console.WriteLine("Odd!");
+            }
+
+            // You can chain if/else statements together. 
+            Console.Write("Enter another number: ");
+            int anotherNumber = Convert.ToInt32(Console.ReadLine());
+            if (anotherNumber < 10)
+            {
+                Console.WriteLine("Small!");
+            }
+            else if (anotherNumber < 50)
+            {
+                Console.WriteLine("Medium size!");
+            }
+            else
+            {
+                Console.WriteLine("Big!");
+            }
+
+            // intermediate: switch/case
+
+            #endregion
+            
         }
     }
 }
