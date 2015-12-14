@@ -103,7 +103,22 @@ namespace BasicConcepts
             // intermediate: switch/case
 
             #endregion
-            
+
+            #region flowcontrol: loops
+            // Many times you wish to spin through and perform a given action 2, 5, 1000 times in a row, for example, displaying all people in a list.
+            // You could do Console.WriteLine(1); Console.WriteLine(2); ... Console.WriteLine(1000);, but that would be far too much work.
+
+            // When you know how many times you are going to execute a given action, a for loop is a good choice. 
+            // Syntax: for (startCounter, endCondition, counterModifier)
+            // In this case, the start value is 1, the loop will execute as long as the value is less than or equal to 10, and the value will increment by 1 every time.
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("i = " + i);
+            }
+
+
+            #endregion
         }
     }
 }
