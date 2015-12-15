@@ -111,12 +111,12 @@ namespace BasicConcepts
             // When you know how many times you are going to execute a given action, a for loop is a good choice. 
             // Syntax: for (startCounter, endCondition, counterModifier)
             // In this case, the start value is 1, the loop will execute as long as the value is less than or equal to 10, and the value will increment by 1 every time.
+            // example of not incrementing the value: http://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1
 
             for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine("i = " + i);
             }
-
 
             #endregion
         }
